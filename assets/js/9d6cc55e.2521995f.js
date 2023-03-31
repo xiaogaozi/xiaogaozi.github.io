@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9871],{9360:e=>{e.exports=JSON.parse('{"label":"AppleScript","permalink":"/blog/tags/apple-script","allTagsPath":"/blog/tags","count":1}')}}]);

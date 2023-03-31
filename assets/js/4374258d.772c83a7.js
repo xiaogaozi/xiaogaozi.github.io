@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6097],{4474:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/maybe-news/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":18,"previousPage":"/blog/tags/maybe-news","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2446],{9916:s=>{s.exports=JSON.parse('{"label":"octopress","permalink":"/blog/tags/octopress","allTagsPath":"/blog/tags","count":1}')}}]);
