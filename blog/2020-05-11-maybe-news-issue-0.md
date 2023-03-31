@@ -15,7 +15,7 @@ tags: [maybe news]
 
 这篇论文由微软亚洲研究院与中科大共同发表在 [WWW 2020](https://www2020.thewebconf.org) 会议上，提出了一种新的表示物品向量的方法，大幅降低存储向量所需空间的同时还显著提升了召回效果。一个直观的数据：LightRec 将 1 千亿 256 维双精度向量的内存占用从 9.5 GB 降到了 337 MB，这是非常惊人的！现在工业界常用的 [nmslib](https://github.com/nmslib/nmslib) 和 [Faiss](https://github.com/facebookresearch/faiss) 都无法实现如此高的压缩比，因此很多时候都需要借助分布式存储来满足业务场景，如果真的如论文中所描述的一样那单机存储在未来很长一段时间来说都是完全足够的。
 
-这里简单解释一下为什么向量召回对于当下的推荐系统如此重要，传统的召回是基于倒排索引的方式，正如我在[之前的一篇文章](/2020/04/21/how-to-design-a-distributed-index-framework-part-1/)中介绍的那样，召回与模型优化目标之间的差异较大导致召回效果始终较差。自从 [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/publication/learning-deep-structured-semantic-models-for-web-search-using-clickthrough-data) 这篇论文（同样也是由微软研究院发表）提出 DSSM（Deep Structured Semantic Models）以后，将召回与 DNN 进行结合，显著提升了召回的效果，在很多公司的实践中也的确论证了 DSSM 是一个非常有效的召回方式。DSSM 的核心是分别为物品和用户生成向量，再通过 ANN（Approximate Nearest Neighbors）查询相似向量从而实现召回。因此向量的存储和查询效率决定了在线请求的效果和性能，如何平衡向量索引的空间占用和召回效果是非常重要的。
+这里简单解释一下为什么向量召回对于当下的推荐系统如此重要，传统的召回是基于倒排索引的方式，正如我在[之前的一篇文章](/blog/2020/04/21/how-to-design-a-distributed-index-framework-part-1/)中介绍的那样，召回与模型优化目标之间的差异较大导致召回效果始终较差。自从 [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data](https://www.microsoft.com/en-us/research/publication/learning-deep-structured-semantic-models-for-web-search-using-clickthrough-data) 这篇论文（同样也是由微软研究院发表）提出 DSSM（Deep Structured Semantic Models）以后，将召回与 DNN 进行结合，显著提升了召回的效果，在很多公司的实践中也的确论证了 DSSM 是一个非常有效的召回方式。DSSM 的核心是分别为物品和用户生成向量，再通过 ANN（Approximate Nearest Neighbors）查询相似向量从而实现召回。因此向量的存储和查询效率决定了在线请求的效果和性能，如何平衡向量索引的空间占用和召回效果是非常重要的。
 
 微软研究院的微信公众号有一篇简短的针对这篇论文的[中文版介绍](https://mp.weixin.qq.com/s/E43gc16A3OVWgxyfdUxr7g)，有兴趣也可以先看这篇文章。
 
