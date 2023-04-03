@@ -47,6 +47,14 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
+        gtag: {
+          trackingID: 'G-VLS34Q8L74',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -80,6 +88,21 @@ const config = {
 
   plugins: [
     'docusaurus-plugin-sass',
+  ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en', 'zh'],
+        indexDocs: false,
+        indexBlog: true,
+        blogDir: ['blog'],
+        blogRouteBasePath: ['/blog'],
+        searchResultLimits: 10,
+      },
+    ],
   ],
 };
 
