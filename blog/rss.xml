@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Freedom Blog</title>
+        <title>Freedom</title>
         <link>https://xiaogaozi.org/blog</link>
         <description>Freedom Blog</description>
         <lastBuildDate>Sat, 11 Mar 2023 10:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <language>en</language>
+        <language>zh-CN</language>
+        <copyright>Copyright © 2023 xiaogaozi</copyright>
         <item>
             <title><![CDATA[浅析三款大规模分布式文件系统架构设计]]></title>
             <link>https://xiaogaozi.org/blog/2023/03/11/large-scale-distributed-file-system-comparison</link>

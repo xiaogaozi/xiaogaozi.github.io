@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiaogaozi.org/blog</id>
-    <title>Freedom Blog</title>
+    <title>Freedom</title>
     <updated>2023-03-11T10:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiaogaozi.org/blog"/>
     <subtitle>Freedom Blog</subtitle>
     <icon>https://xiaogaozi.org/img/favicon.ico</icon>
+    <rights>Copyright © 2023 xiaogaozi</rights>
     <entry>
         <title type="html"><![CDATA[浅析三款大规模分布式文件系统架构设计]]></title>
         <id>https://xiaogaozi.org/blog/2023/03/11/large-scale-distributed-file-system-comparison</id>
