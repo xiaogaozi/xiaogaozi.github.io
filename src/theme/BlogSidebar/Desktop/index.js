@@ -42,6 +42,39 @@ export default function BlogSidebarDesktop({ sidebar }) {
             Archive
           </Link>
         </div>
+
+        <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
+          Feed
+        </div>
+        <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
+          <li key="atom" className={styles.sidebarItem}>
+            <Link
+              isNavLink
+              to="/blog/atom.xml"
+              className={styles.sidebarItemLink}
+              activeClassName={styles.sidebarItemLinkActive}>
+              Atom
+            </Link>
+          </li>
+          <li key="rss" className={styles.sidebarItem}>
+            <Link
+              isNavLink
+              to="/blog/rss.xml"
+              className={styles.sidebarItemLink}
+              activeClassName={styles.sidebarItemLinkActive}>
+              RSS
+            </Link>
+          </li>
+          <li key="json" className={styles.sidebarItem}>
+            <Link
+              isNavLink
+              to="/blog/feed.json"
+              className={styles.sidebarItemLink}
+              activeClassName={styles.sidebarItemLinkActive}>
+              JSON
+            </Link>
+          </li>
+        </ul>
       </nav>
     </aside>
   );
