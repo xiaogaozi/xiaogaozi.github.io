@@ -43,6 +43,13 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            title: 'Freedom',
+            description: 'Freedom Blog',
+            language: 'zh-CN',
+            copyright: `Copyright © ${new Date().getFullYear()} xiaogaozi`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -66,9 +73,9 @@ const config = {
       navbar: {
         title: 'Freedom',
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: 'projects', label: 'Projects', position: 'left'},
-          {to: 'about', label: 'About', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: 'projects', label: 'Projects', position: 'left' },
+          { to: 'about', label: 'About', position: 'left' },
           {
             href: 'https://maybe.news',
             label: 'Maybe News',
