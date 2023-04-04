@@ -6,6 +6,26 @@ title: Projects
 
 ## 2022
 
+### remark-validate-links-heading-id
+
+The plugin for [remark-validate-links](https://github.com/remarkjs/remark-validate-links) to support custom heading ID (e.g. `# Heading {#custom-heading-id}`) ([GitHub](https://github.com/xiaogaozi/remark-validate-links-heading-id))
+
+### markdownlint-rule-no-trailing-slash-in-links
+
+The [markdownlint](https://github.com/DavidAnson/markdownlint) rule to check if there is trailing slash in links ([GitHub](https://github.com/xiaogaozi/markdownlint-rule-no-trailing-slash-in-links))
+
+### markdownlint-rule-enhanced-proper-names
+
+Enhanced [`MD044/proper-names`](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md044---proper-names-should-have-the-correct-capitalization) rule for [markdownlint](https://github.com/DavidAnson/markdownlint) ([GitHub](https://github.com/xiaogaozi/markdownlint-rule-enhanced-proper-names))
+
+### juicefs-mode
+
+The major modes for viewing [JuiceFS](https://github.com/juicedata/juicefs) related files (e.g. [access log](https://juicefs.com/docs/community/fault_diagnosis_and_analysis#access-log))
+
+### wlb-workflow
+
+Alfred workflow for WLB, the handy tool for work-life balance.
+
 ### alipay-to-moze
 
 Convert transaction records of Alipay to [MOZE](https://moze.app") app format
@@ -19,6 +39,14 @@ Convert transaction records of Alipay to [MOZE](https://moze.app") app format
 ### wechat-forwarder
 
 The handy tool to receive WeChat message and send reply in Slack (based on [Wechaty](https://github.com/wechaty/wechaty))
+
+For more information, please refer to [this post](/blog/2021/09/09/do-not-chat-on-wechat).
+
+## 2020
+
+### paprika
+
+Paprika is a simple distributed key-value database. The project name is came from [same name movie](https://www.imdb.com/title/tt0851578) directed by Satoshi Kon.
 
 ## 2019
 
@@ -44,6 +72,8 @@ Ellie is a service to monitor machine learning pipeline
 
 Hyrule is a high-performance, distributed store index engine library
 
+For more information, please refer to [these posts](/blog/tags/htdadif).
+
 ### hyrule-operator
 
 Kubernetes operator for Hyrule application
@@ -59,6 +89,20 @@ Java language binding for [Faiss](https://github.com/facebookresearch/faiss)
 ### ann-benchmark
 
 Approximate nearest neighbor (ANN) search libraries benchmark
+
+## 2017
+
+### tally-influxdb
+
+InfluxDB reporter for [tally](https://github.com/uber-go/tally)
+
+### schooldb
+
+SchoolDB help build sharding service (with data) easily
+
+### grpckit-go
+
+grpckit is a toolkit for building microservice. This repository is Go language implementation.
 
 ## 2016
 
