@@ -45,8 +45,8 @@ const config = {
           showReadingTime: true,
           feedOptions: {
             type: 'all',
-            title: 'Freedom',
-            description: 'Freedom Blog',
+            title: 'Freedom - Blog',
+            description: 'xiaogaozi\'s blog',
             language: 'zh-CN',
             copyright: `Copyright © ${new Date().getFullYear()} xiaogaozi`,
           },
@@ -74,6 +74,14 @@ const config = {
         title: 'Freedom',
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'dropdown',
+            label: 'Podcast',
+            position: 'left',
+            items: [
+              { label: '立入禁止', to: '/podcast/tags/no-admittance' },
+            ],
+          },
           { to: 'projects', label: 'Projects', position: 'left' },
           { to: 'about', label: 'About', position: 'left' },
           {
@@ -95,6 +103,34 @@ const config = {
 
   plugins: [
     'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'podcast',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'podcast',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './podcast',
+
+        blogTitle: 'Podcast',
+        showReadingTime: true,
+        feedOptions: {
+          type: null,
+          // title: 'Freedom - Podcast',
+          // description: 'xiaogaozi\'s podcast',
+          // language: 'zh-CN',
+          // copyright: `Copyright © ${new Date().getFullYear()} xiaogaozi`,
+        },
+      },
+    ],
   ],
 
   themes: [

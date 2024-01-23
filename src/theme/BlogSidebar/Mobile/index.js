@@ -1,9 +1,11 @@
 import React from 'react';
 
 import { NavbarSecondaryMenuFiller } from '@docusaurus/theme-common';
+import { useLocation } from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 
 function BlogSidebarMobileSecondaryMenu({ sidebar }) {
+  const blogId = useLocation().pathname.split('/')[1];
   return (
     <ul className="menu__list">
       {sidebar.items.map((item) => (
@@ -21,7 +23,7 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }) {
       <li key="archive" className="menu__list-item">
         <Link
           isNavLink
-          to="/blog/archive"
+          to={`/${blogId}/archive`}
           className="menu__link"
           activeClassName="menu__link--active">
           Archive

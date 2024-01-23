@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import styles from './index.module.css';
@@ -17,17 +18,22 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/blog">
+            to={useBaseUrl('blog')}>
             Blog
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/projects">
+            to={useBaseUrl('podcast')}>
+            Podcast
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to={useBaseUrl('projects')}>
             Projects
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/about">
+            to={useBaseUrl('about')}>
             About
           </Link>
         </div>
