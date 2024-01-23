@@ -1,8 +1,8 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Freedom",
+    "title": "Freedom - Blog",
     "home_page_url": "https://xiaogaozi.org/blog",
-    "description": "Freedom Blog",
+    "description": "xiaogaozi's blog",
     "items": [
         {
             "id": "https://xiaogaozi.org/blog/2024/01/09/my-annual-movie-and-tv-roundup-for-2023",
