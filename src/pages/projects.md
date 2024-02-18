@@ -4,6 +4,12 @@ title: Projects
 
 # Projects
 
+## 2024
+
+### slack-workflow
+
+Alfred workflow for Slack
+
 ## 2022
 
 ### remark-validate-links-heading-id
