@@ -1,38 +1,55 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import { NavbarSecondaryMenuFiller } from '@docusaurus/theme-common';
 import { useLocation } from '@docusaurus/router';
+import {
+  useVisibleBlogSidebarItems,
+  BlogSidebarItemList,
+} from '@docusaurus/plugin-content-blog/client';
+import BlogSidebarContent from '@theme/BlogSidebar/Content';
 import Link from '@docusaurus/Link';
+
+import styles from './styles.module.css';
+
+const ListComponent = ({ items }) => {
+  return (
+    <BlogSidebarItemList
+      items={items}
+      ulClassName="menu__list"
+      liClassName="menu__list-item"
+      linkClassName="menu__link"
+      linkActiveClassName="menu__link--active"
+    />
+  );
+};
 
 function BlogSidebarMobileSecondaryMenu({ sidebar }) {
   const blogId = useLocation().pathname.split('/')[1];
+  const items = useVisibleBlogSidebarItems(sidebar.items);
   return (
-    <ul className="menu__list">
-      {sidebar.items.map((item) => (
-        <li key={item.permalink} className="menu__list-item">
+    <div>
+      <BlogSidebarContent
+        items={items}
+        ListComponent={ListComponent}
+        yearGroupHeadingClassName={styles.yearGroupHeading}
+      />
+
+      <ul className="menu__list">
+        <li key="archive" className="menu__list-item">
           <Link
             isNavLink
-            to={item.permalink}
+            to={`/${blogId}/archive`}
             className="menu__link"
             activeClassName="menu__link--active">
-            {item.title}
+            Archive
           </Link>
         </li>
-      ))}
-
-      <li key="archive" className="menu__list-item">
-        <Link
-          isNavLink
-          to={`/${blogId}/archive`}
-          className="menu__link"
-          activeClassName="menu__link--active">
-          Archive
-        </Link>
-      </li>
-    </ul>
+      </ul>
+    </div>
   );
 }
-export default function BlogSidebarMobile(props) {
+
+function BlogSidebarMobile(props) {
   return (
     <NavbarSecondaryMenuFiller
       component={BlogSidebarMobileSecondaryMenu}
@@ -40,3 +57,5 @@ export default function BlogSidebarMobile(props) {
     />
   );
 }
+
+export default memo(BlogSidebarMobile);

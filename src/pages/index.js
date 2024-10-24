@@ -19,22 +19,22 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={useBaseUrl('blog')}>
-            Blog
+            ✍️ Blog
           </Link>
           <Link
             className="button button--secondary button--lg"
             to={useBaseUrl('podcast')}>
-            Podcast
+            🎙️ Podcast
           </Link>
           <Link
             className="button button--secondary button--lg"
             to={useBaseUrl('projects')}>
-            Projects
+            🧑‍💻 Projects
           </Link>
           <Link
             className="button button--secondary button--lg"
             to={useBaseUrl('about')}>
-            About
+            🖖 About
           </Link>
         </div>
       </div>
