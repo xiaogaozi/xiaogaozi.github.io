@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { memo } from 'react';
 import clsx from 'clsx';
 
 import { translate } from '@docusaurus/Translate';
 import { useLocation } from '@docusaurus/router';
+import {
+  useVisibleBlogSidebarItems,
+  BlogSidebarItemList,
+} from '@docusaurus/plugin-content-blog/client';
+import BlogSidebarContent from '@theme/BlogSidebar/Content';
 import Link from '@docusaurus/Link';
 
 import styles from './styles.module.css';
@@ -38,8 +43,21 @@ function Feed({ blogId }) {
   }
 }
 
-export default function BlogSidebarDesktop({ sidebar }) {
+const ListComponent = ({ items }) => {
+  return (
+    <BlogSidebarItemList
+      items={items}
+      ulClassName={clsx(styles.sidebarItemList, 'clean-list')}
+      liClassName={styles.sidebarItem}
+      linkClassName={styles.sidebarItemLink}
+      linkActiveClassName={styles.sidebarItemLinkActive}
+    />
+  );
+};
+
+function BlogSidebarDesktop({ sidebar }) {
   const blogId = useLocation().pathname.split('/')[1];
+  const items = useVisibleBlogSidebarItems(sidebar.items);
   return (
     <aside className="col col--3">
       <nav
@@ -52,19 +70,11 @@ export default function BlogSidebarDesktop({ sidebar }) {
         <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
           {sidebar.title}
         </div>
-        <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
-          {sidebar.items.map((item) => (
-            <li key={item.permalink} className={styles.sidebarItem}>
-              <Link
-                isNavLink
-                to={item.permalink}
-                className={styles.sidebarItemLink}
-                activeClassName={styles.sidebarItemLinkActive}>
-                {item.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <BlogSidebarContent
+          items={items}
+          ListComponent={ListComponent}
+          yearGroupHeadingClassName={styles.yearGroupHeading}
+        />
 
         <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
           <Link
@@ -81,3 +91,5 @@ export default function BlogSidebarDesktop({ sidebar }) {
     </aside>
   );
 }
+
+export default memo(BlogSidebarDesktop);

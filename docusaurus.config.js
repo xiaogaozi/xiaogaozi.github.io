@@ -1,8 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+const { themes } = require('prism-react-renderer');
+
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,6 +45,7 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          onUntruncatedBlogPosts: 'ignore',
           feedOptions: {
             type: 'all',
             title: 'Freedom - Blog',
@@ -96,8 +99,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} xiaogaozi. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
     }),
 
@@ -122,6 +125,8 @@ const config = {
 
         blogTitle: 'Podcast',
         showReadingTime: true,
+        onUntruncatedBlogPosts: 'ignore',
+
         feedOptions: {
           type: null,
           // title: 'Freedom - Podcast',
