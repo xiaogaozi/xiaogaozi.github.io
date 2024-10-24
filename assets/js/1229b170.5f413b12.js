@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5708],{7402:a=>{a.exports=JSON.parse('{"label":"annual roundup","permalink":"/blog/tags/annual-roundup","allTagsPath":"/blog/tags","count":1}')}}]);

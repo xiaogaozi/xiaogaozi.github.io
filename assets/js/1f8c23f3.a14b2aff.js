@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2549],{8331:e=>{e.exports=JSON.parse('{"label":"C\'EST LA VIE","permalink":"/blog/tags/cest-la-vie","allTagsPath":"/blog/tags","count":1}')}}]);
