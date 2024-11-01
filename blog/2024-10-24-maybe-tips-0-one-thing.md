@@ -6,9 +6,9 @@ tags: ["maybe tips"]
 
 > 「Maybe Tips」是一档以「我不知道对你们是否有用，反正对我来说很有用」为宗旨的栏目，每一期只会围绕一个主题，可能是一个我觉得好用的 app，也可能是某个奇怪的使用技巧。篇幅不求长短，反正写长了也没人看。以下是正文。
 
-{/* truncate */}
-
 ![One Thing icon](/img/blog/maybe-tips/0/one-thing-icon.png)
+
+{/* truncate */}
 
 本期介绍的是一个叫做 [One Thing](https://sindresorhus.com/one-thing) 的 app，知道这个 app 其实是因为先了解到了同一个作者的另一个 app——[Hyperduck](https://sindresorhus.com/hyperduck)（一个可以从 iOS 共享信息给 macOS 的工具，有点类似于 AirDrop 和 Handoff，不过我最终并没有用 Hyperduck，我还是更习惯于原生的功能）。这个作者厉害的地方在于他独立开发了非常多的 app，你可以去他的[主页](https://sindresorhus.com/apps)查看，而 One Thing 就是其中一个。
 
