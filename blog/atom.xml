@@ -2,12 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiaogaozi.org/blog</id>
     <title>Freedom - Blog</title>
-    <updated>2024-10-24T08:00:00.000Z</updated>
+    <updated>2024-11-01T21:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiaogaozi.org/blog"/>
     <subtitle>xiaogaozi's blog</subtitle>
     <icon>https://xiaogaozi.org/img/favicon.ico</icon>
     <rights>Copyright © 2024 xiaogaozi</rights>
+    <entry>
+        <title type="html"><![CDATA[Maybe Tips #1 Input Source Pro]]></title>
+        <id>https://xiaogaozi.org/blog/2024/11/01/maybe-tips-1-input-source-pro</id>
+        <link href="https://xiaogaozi.org/blog/2024/11/01/maybe-tips-1-input-source-pro"/>
+        <updated>2024-11-01T21:30:00.000Z</updated>
+        <summary type="html"><![CDATA[「Maybe Tips」是一档以「我不知道对你们是否有用，反正对我来说很有用」为宗旨的栏目，每一期只会围绕一个主题，可能是一个我觉得好用的 app，也可能是某个奇怪的使用技巧。篇幅不求长短，反正写长了也没人看。以下是正文。]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>「Maybe Tips」是一档以「我不知道对你们是否有用，反正对我来说很有用」为宗旨的栏目，每一期只会围绕一个主题，可能是一个我觉得好用的 app，也可能是某个奇怪的使用技巧。篇幅不求长短，反正写长了也没人看。以下是正文。</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="Input Source Pro icon" src="https://xiaogaozi.org/assets/images/input-source-pro-icon-4c86cc972f6744bbdff2dc9c0b7d3fdc.png" width="256" height="256" class="img_ev3q"></p>
+<!-- -->
+<p>本期介绍的是一个叫做 <a href="https://inputsource.pro/zh-CN" target="_blank" rel="noopener noreferrer">Input Source Pro</a> 的 app，看作者的 <a href="https://github.com/runjuu" target="_blank" rel="noopener noreferrer">GitHub 主页</a>，应该是一位生活在加拿大的华人。这个 app 是用来干嘛的呢，请允许我先引用一段作者自己写在 app 主页上的话：</p>
+<blockquote>
+<p>作为多输入法用户，我经常会遇到弄混输入法的情况。虽然大部分情况下无关痛痒，但注意力集中时被这种事情打断，多少也有点影响节奏。</p>
+</blockquote>
+<p>以上这段话应该对于所有日常需要处理多语言的人来说都会产生很强烈的共鸣（所以说米国人是肯定不会做出这种 app 的），当我发现这个 app 时只有一种「相见恨晚」的感觉。不知道你有没有遇到过类似的场景，当你想要打字时，本来想打英文，结果敲了几个字母以后发现还在用中文输入法，然后就得先把刚刚敲的那几个字母删掉，切换回英文输入法，最后再开始打字。反过来也是类似的，本来想打中文，结果输入法还是英文，就又得重复一遍刚才描述的过程。如此反复，在我日常的工作和生活中总是会不断面临着这样的困扰。</p>
+<p>有些人可能就会说了，你打字之前看一眼右上角的输入法图标不就好了吗？这句话说得很有道理，但人都是很懒的，如果每次打字之前都要先去看一眼输入法状态那就实在太麻烦了。况且在 macOS 上还可能出现把 app 全屏显示的时候，这时顶部的菜单栏都是隐藏的，自然也就没法很方便地查看当前输入法是什么了。</p>
+<p>于是我就在想是不是可以把输入法状态显示在离打字的视线更近的地方呢？当我们在打字时什么地方离视线最近呢？对了，光标！有了这么一个灵光一闪的想法以后，我就开始以各种关键词搜索，看看有没有人已经实现了我的这个想法。不得不说，这是一个很小众的需求，经过一番查找我只找到了一个可以把输入法状态显示在鼠标指针（注意不是光标）上的 app，叫做 <a href="https://github.com/freefelt/YouType" target="_blank" rel="noopener noreferrer">YouType</a>，作者是一个俄罗斯人。YouType 能做到的是当你把鼠标点击到某个输入框时，会在鼠标指针旁边显示一个国旗的小图标来告诉你当前的输入法是什么。这个操作逻辑其实挺合理的，对于大部分习惯用鼠标的人来说的确会有这样的流程。不过对于我来说，我更习惯于用键盘操作，所以鼠标指针大部分情况下在我的电脑上其实是「隐藏」的，于是为了用这个功能，我不得不时不时晃动一下鼠标来确认当前的输入法状态，这样用起来其实就有点别扭了，最初用这个 app 是希望能帮我减少打字时的负担，现在反而增加了一些负担。所以我又继续去搜寻是否存在这样一个 app 可以完美满足我的需求，这一次我找到了 Input Source Pro。</p>
+<p>当我打开 Input Source Pro 主页的那一刻，我就知道它完全就是我想要的，而且这个 app 居然还是免费的！Input Source Pro 的逻辑其实很简单，当你切换输入法的时候会在光标右上角出现一个提示，同时这个提示还可以变成一个「小圆点」持续显示在光标右上角。你可以为不同的输入法设置不同的颜色，这样你就可以仅仅凭借点的颜色来分辨当前的输入法是什么了。举个例子，我把英文输入法设置为了黄色，中文输入法设置为了蓝色，打字时的效果就会像下面这样：</p>
+<p><img decoding="async" loading="lazy" alt="Input Source Pro demo" src="https://xiaogaozi.org/assets/images/input-source-pro-demo-c6bd59ba415d87c4ca347c4cef4ea616.gif" width="1592" height="260" class="img_ev3q"></p>
+<p>可以看到随着你打字时光标的移动，右上角的小圆点也会跟随移动。并且在切换输入法以后，小圆点的颜色也随之变化。整个 app 的功能完美融入到了你的打字流程中，对用户来说是一个非常自然的体验。细心的人可能注意到了，在切换输入法时除了右上角的提示以外，在光标正下方还有一个提示，只不过下方的这个提示只有一个图标，并没有把输入法的名字显示出来，并且不同输入法的颜色也都是同样的蓝色。这个提示其实并不是 Input Source Pro 的功能，而是 macOS 14（Sonoma）开始引入的新特性。我在 Sonoma 发布之前就已经在使用 Input Source Pro 了，所以当我升级到 Sonoma 发现新的 macOS 居然加入了一个和 Input Source Pro 差不多的功能时还是觉得很惊讶。不过似乎也有一些人并不喜欢 Sonoma 的这个新功能，如果你想把它关掉会稍微有点麻烦（系统设置里并没有提供开关），可以参考<a href="https://discussions.apple.com/thread/255161577" target="_blank" rel="noopener noreferrer">这里</a>的讨论。</p>
+<p>以上就是我发现 Input Source Pro 之前最想要的功能，不过我还惊喜地发现这个 app 提供了一些额外的有用功能。比如为不同的 app 设置不同的默认输入法，这个功能有什么用呢？我觉得至少对于程序员来说非常有用，因为日常工作中可能需要频繁在终端、代码编辑器、聊天工具等 app 之间进行切换，而不同的 app 会有不同的输入偏好，比如终端和代码编辑器通常就希望用英文输入法，而聊天工具则希望用中文输入法。有了这个功能以后，就可以为不同的 app 设置不同的默认输入法，这样当你从聊天工具切换到终端时输入法也会自动切换，对于懒人来说非常方便。</p>
+<p>这个 app 甚至还可以根据浏览器里不同的网站来自动切换输入法，只要写好域名的匹配规则（比如后缀匹配、全匹配、正则表达式匹配），就可以自动切换到你设定的默认输入法。比如把 <code>github.com</code> 这个域名作为匹配规则，那当你每次访问 GitHub 时都会默认使用你设定的输入法。还可以为浏览器的地址栏设定一个默认输入法，对于我来说我会把它设定为英文输入法，我可不想输入网址时还要手动从中文输入法切换回来。</p>
+<p>以上就是关于 Input Source Pro 的介绍，我觉得相对于它给我带来的「幸福感」提升，我完全值得为它付费，无奈作者一直没有推出付费计划。不过幸好他有开通 <a href="https://github.com/sponsors/runjuu" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>，如果你觉得这个 app 有帮到你，也欢迎去给作者打赏。</p>]]></content>
+        <category label="maybe tips" term="maybe tips"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Maybe Tips #0 One Thing]]></title>
         <id>https://xiaogaozi.org/blog/2024/10/24/maybe-tips-0-one-thing</id>
@@ -17,8 +43,8 @@
         <content type="html"><![CDATA[<blockquote>
 <p>「Maybe Tips」是一档以「我不知道对你们是否有用，反正对我来说很有用」为宗旨的栏目，每一期只会围绕一个主题，可能是一个我觉得好用的 app，也可能是某个奇怪的使用技巧。篇幅不求长短，反正写长了也没人看。以下是正文。</p>
 </blockquote>
-<!-- -->
 <p><img decoding="async" loading="lazy" alt="One Thing icon" src="https://xiaogaozi.org/assets/images/one-thing-icon-a3793720c6f66c7be10a4d66a416d8a4.png" width="256" height="256" class="img_ev3q"></p>
+<!-- -->
 <p>本期介绍的是一个叫做 <a href="https://sindresorhus.com/one-thing" target="_blank" rel="noopener noreferrer">One Thing</a> 的 app，知道这个 app 其实是因为先了解到了同一个作者的另一个 app——<a href="https://sindresorhus.com/hyperduck" target="_blank" rel="noopener noreferrer">Hyperduck</a>（一个可以从 iOS 共享信息给 macOS 的工具，有点类似于 AirDrop 和 Handoff，不过我最终并没有用 Hyperduck，我还是更习惯于原生的功能）。这个作者厉害的地方在于他独立开发了非常多的 app，你可以去他的<a href="https://sindresorhus.com/apps" target="_blank" rel="noopener noreferrer">主页</a>查看，而 One Thing 就是其中一个。</p>
 <p>之所以要介绍 One Thing 是因为它解决了一个长久困扰我的问题。话说从头，基于众所周知的原因，在中国大陆访问互联网除了需要梯子以外，还有一件非常重要的事情就是「DNS 服务器」。并不是说你需要自己部署一个 DNS 服务器，而是需要使用那些没有被「污染」过、可信任的 DNS 服务器。所以我在日常的网上冲浪过程中会特别关注当前使用的 DNS 服务器是什么，因为你的电脑可能会由于各种奇怪的原因重置回默认的 DNS 服务器。为了快速查看和切换到正确的 DNS 服务器，我使用了 Alfred 的 <a href="https://alfred.app/workflows/chrisgrieser/atop" target="_blank" rel="noopener noreferrer">atop</a> workflow。这个 workflow 大大简化了确认和设置 DNS 服务器的流程，不过我还是觉得每天反复 N 次去人肉检查是一个很蠢的行为，基于职业习惯我希望把整个流程变成一个自动化的操作（比如定期把当前的 DNS 服务器显示在右上角的菜单栏里）。经过一番网络搜索，我并没有找到这样一个可以解决我问题的 app 或者方法，于是只能继续人肉检查。直到有一天我发现了 One Thing 这个 app。</p>
 <p>One Thing 的功能其实非常简单，它有且只有一个功能，就是在右上角的菜单栏里显示一个你自定义的内容。也许你会想这个功能和前面提到的 DNS 服务器有什么关联吗，不要着急，One Thing 强大的地方不在于此，而在于它可以和 Shortcuts（快捷指令）集成！感谢阿库，让我们可以在 macOS 上使用 Shortcuts，一旦某个应用支持了 Shortcuts，那它就有了丰富的使用场景。于是我要做的事情就非常简单了，你可以点击<a href="https://www.icloud.com/shortcuts/daa6fca9a1b447abab2724f23c5549a8" target="_blank" rel="noopener noreferrer">这里</a>查看我制作的 shortcut（截图如下）。这个 shortcut 其实只有两个步骤，首先使用脚本获取当前的 DNS 服务器，然后通过 One Thing 把这个服务器显示在菜单栏里，大功告成！</p>
@@ -853,17 +879,5 @@
 <p><a href="https://juicefs.com/zh-cn/blog/engineering/distributed-filesystem-comparison" target="_blank" rel="noopener noreferrer">[链接]</a></p>
 <p>2003 年 Google 发表了 <a href="https://research.google/pubs/pub51" target="_blank" rel="noopener noreferrer">The Google File System</a> 论文，就像前面提到的 MapReduce 一样，从此对业界产生了非常深远的影响。这篇博客梳理了 GlusterFS、CephFS、GFS、HDFS、MooseFS 和 <a href="https://juicefs.com/" target="_blank" rel="noopener noreferrer">JuiceFS</a> 这几个分布式文件系统的架构设计。随着网络带宽的发展，在云计算和云原生的大趋势下，总的来说正逐步朝着存储计算分离的方向演进，这对于基础设施的架构也有着一定的要求。</p>]]></content>
         <category label="maybe news" term="maybe news"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introduction to DL Platform]]></title>
-        <id>https://xiaogaozi.org/blog/2020/08/17/introduction-to-dl-platform</id>
-        <link href="https://xiaogaozi.org/blog/2020/08/17/introduction-to-dl-platform"/>
-        <updated>2020-08-17T16:25:32.000Z</updated>
-        <summary type="html"><![CDATA[最近在团队内部做了一次关于深度学习平台的分享，内容上一方面来自过去的工作经验，另一方面也有很多过去想做但是由于各种原因没来得及实现的想法。]]></summary>
-        <content type="html"><![CDATA[<p>最近在团队内部做了一次关于深度学习平台的分享，内容上一方面来自过去的工作经验，另一方面也有很多过去想做但是由于各种原因没来得及实现的想法。</p>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/mux6PLZygjwwrE" width="700" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px;margin-bottom:5px;max-width:100%"></iframe>]]></content>
-        <category label="deep learning" term="deep learning"/>
-        <category label="k8s" term="k8s"/>
-        <category label="kubeflow" term="kubeflow"/>
     </entry>
 </feed>
