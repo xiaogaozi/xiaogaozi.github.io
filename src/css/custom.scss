@@ -58,6 +58,7 @@
     border-left: 8px solid var(--ifm-color-primary);
     padding: 15px 30px 15px 15px;
     font-style: italic;
+    font-size: 100%;
 
     code {
       background-color: rgba(0, 0, 0, 0.07);
@@ -71,6 +72,22 @@
 
   .podcast-player {
     margin-bottom: 1rem;
+  }
+
+  .footnotes {
+    #footnote-label {
+      font-size: 100%;
+      border-top: 0.5px solid;
+      padding-top: 10px;
+    }
+
+    font-size: 70%;
+    color: grey;
+
+    p {
+      margin-top: var(--ifm-list-paragraph-margin) / 2;
+      margin-bottom: var(--ifm-list-paragraph-margin) / 2;
+    }
   }
 }
 

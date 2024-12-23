@@ -101,6 +101,7 @@ const config = {
       prism: {
         theme: lightTheme,
         darkTheme: darkTheme,
+        additionalLanguages: ['applescript', 'bash', 'cmake', 'go', 'java', 'python'],
       },
     }),
 
