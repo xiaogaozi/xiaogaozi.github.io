@@ -12,7 +12,7 @@ tags: [maybe news]
 
 [[链接]](https://dl.acm.org/doi/10.1145/3299869.3314046)
 
-跟[上次介绍](https://blog.xiaogaozi.org/2020/04/26/weekly-reading-list-issue-1/)的 FoundationDB Record Layer 一样，这篇来自京东团队的论文也是发表在 SIGMOD 2019，介绍了一个为大规模容器平台设计的分布式文件系统。
+跟[上次介绍](/blog/2020/04/26/weekly-reading-list-issue-1)的 FoundationDB Record Layer 一样，这篇来自京东团队的论文也是发表在 SIGMOD 2019，介绍了一个为大规模容器平台设计的分布式文件系统。
 
 系统整体由 3 部分组成：元数据子系统（metadata subsystem）、数据子系统（data subsystem）、资源管理器（resource manager）。元数据子系统负责维护 inode 和 dentry（directory entry），数据子系统负责存储数据块，资源管理器负责处理客户端的各种文件操作请求以及维护前面两个子系统的状态。元数据子系统和数据子系统都是多 partition 的分布式系统，多个元数据和数据的 partition 逻辑上共同组成一个卷（volume），这个卷即是对客户端（容器）可见的存储单元并且可以被挂载，通过传统的 POSIX 接口访问。
 

@@ -18,7 +18,7 @@ tags: [maybe news]
 
 这篇论文虽然介绍的是 Kudu 早期的一些设计思想，但基本上属于最核心的功能。跟很多分布式数据库一样，Kudu 也是受 [Spanner](https://research.google/pubs/pub39966) 启发。系统架构上分为一个 Master 服务和若干 Tablet 服务。Master 负责维护元信息，包括 Tablet 节点和数据的。Tablet 服务则负责数据存储，每台节点上会有几十至数百个 tablet，每个 tablet 中包含了若干数据，最大可以达到几十 GB 的规模（这里你可以把 tablet 类比为很多别的系统中的 region 概念）。
 
-跟很多关系数据库一样，Kudu 是有 table 的概念的。但跟很多 NoSQL 数据库不一样的地方是，强制用户必须显式定义 schema。Kudu 一个有意思的设计在于同时支持了 hash 和 range 这两种数据 partition 方法，而不像别的系统只支持其中一种（有关这两种 partition 的介绍可以看我之前的[一篇文章](https://blog.xiaogaozi.org/2020/05/25/how-to-design-a-distributed-index-framework-part-5/)）。这样设计的好处是即保留了 hash 的数据均匀分配特点，可以在一定程度上防止读写热点，又保留了 range 对于范围扫描的友好性。
+跟很多关系数据库一样，Kudu 是有 table 的概念的。但跟很多 NoSQL 数据库不一样的地方是，强制用户必须显式定义 schema。Kudu 一个有意思的设计在于同时支持了 hash 和 range 这两种数据 partition 方法，而不像别的系统只支持其中一种（有关这两种 partition 的介绍可以看我之前的[一篇文章](/blog/2020/05/25/how-to-design-a-distributed-index-framework-part-5)）。这样设计的好处是即保留了 hash 的数据均匀分配特点，可以在一定程度上防止读写热点，又保留了 range 对于范围扫描的友好性。
 
 Tablet 服务之间是通过 Raft 来进行数据复制，因此可以认为 Kudu 是一个保证强一致性的存储系统。值得注意的是 Kudu 的默认设置是 500 毫秒的心跳间隔以及 1.5 秒的选举超时，这个跟 Raft 论文推荐的时间相比长了不少（推荐的选举超时是 150~300 毫秒）。当集群扩容时，新节点将会首先进入 `PRE_VOTER` 状态，等到 log 追上以后再变成 `VOTER` 状态，这个设计也是 Raft 论文中建议的，不过论文中叫做 learner 或者 non-voting member。Master 服务虽然是单点设计（即状态不是分布式存储），但为了保障高可用也可以通过 Raft 实现多节点状态复制，只不过任意时间只能有一个节点工作。
 
