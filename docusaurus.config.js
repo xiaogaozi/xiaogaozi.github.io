@@ -103,6 +103,10 @@ const config = {
         darkTheme: darkTheme,
         additionalLanguages: ['applescript', 'bash', 'cmake', 'go', 'java', 'python'],
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+      },
     }),
 
   plugins: [
